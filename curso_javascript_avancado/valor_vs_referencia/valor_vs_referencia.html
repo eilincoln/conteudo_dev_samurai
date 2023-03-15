@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valor_vs_referencia</title>
+</head>
+
+<body>
+    <script>
+        function mult(n) {
+            let res = n
+            res *= n
+            return res
+        }
+
+        let numVal = 10
+        console.log(mult(numVal))
+
+
+        function multObj() {
+            obj.value *= obj.value
+            return obj
+        }
+
+        const numObj = {
+            value: 10
+        }
+        console.log()
+    </script>
+</body>
+
+</html>
